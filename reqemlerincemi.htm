@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="nese()">OK</button>
+    <div id="netice"></div>
+    <script>
+const a=document.getElementById("a")
+const netice=document.getElementById("netice")
+function nese(){
+    let x=0
+for(let i=0;i<a.value.length;i++){
+x+=+a.value[i]
+    }
+netice.innerHTML=x
+}
+    </script>
+</body>
+</html>
